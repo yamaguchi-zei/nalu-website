@@ -1,187 +1,134 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Lounge Nalu 求人情報</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
-      color: #ffffff;
-    }
-    body {
-      background-image: url("wave.jpg"); /* 1ページ目と同じ画像 */
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-    .overlay {
-      background: rgba(0, 0, 40, 0.55);
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
-    header h1 {
-      font-size: 2.2rem;
-      margin: 0 0 10px;
-    }
-    header p.sub {
-      margin: 0;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 20px 60px;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    h2 {
-      font-size: 1.3rem;
-      border-bottom: 1px solid rgba(255,255,255,0.4);
-      padding-bottom: 8px;
-      margin-bottom: 16px;
-    }
-    p, li {
-      line-height: 1.8;
-      font-size: 0.95rem;
-    }
-    ul {
-      padding-left: 1.2em;
-      margin: 0;
-    }
-    .links {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
-      border-radius: 999px;
-      border: 1px solid #ffffff;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 0.9rem;
-      background: rgba(0, 0, 0, 0.25);
-    }
-    .links a:hover {
-      background: rgba(255, 255, 255, 0.15);
-    }
-    footer {
-      text-align: center;
-      font-size: 0.75rem;
-      opacity: 0.7;
-      padding-bottom: 20px;
-    }
-    /* スマホ最適化 */
-@media screen and (max-width: 600px) {
-  header {
-    padding: 60px 15px 30px;
-  }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lounge Nalu 求人情報</title>
 
-  header h1 {
-    font-size: 2.2rem;
-    letter-spacing: 0.1em;
-  }
-
-  main {
-    padding: 0 15px 40px;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  p, li {
-    font-size: 1rem;
-    line-height: 1.9;
-  }
-
-  .links a {
-    display: block;
-    margin: 10px auto;
-    width: 80%;
-    padding: 12px;
-    font-size: 1rem;
+<style>
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    color: #fff;
+    background: url("wave.jpg") no-repeat center center fixed;
+    background-size: cover;
   }
 
   .overlay {
     background: rgba(0, 0, 40, 0.55);
+    min-height: 100vh;
   }
-}
 
-  </style>
+  header {
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+
+  header h1 {
+    font-size: 2.6rem;
+    margin: 0;
+    letter-spacing: 0.1em;
+  }
+
+  main {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px 60px;
+  }
+
+  h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 6px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    line-height: 1.9;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  a.back {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
+  a.back:hover {
+    background: rgba(255,255,255,0.35);
+  }
+
+  /* スマホ最適化 */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+    }
+  }
+</style>
 </head>
+
 <body>
-  <div class="overlay">
-    <header>
-      <h1>求人情報</h1>
-      <p class="sub">Lounge Nalu スタッフ募集</p>
-    </header>
+<div class="overlay">
 
-    <main>
-      <section>
-        <h2>募集概要</h2>
-        <p>
-          Lounge Nalu では、一緒に働いていただけるスタッフを募集しています。<br>
-          落ち着いた大人のお客様が中心の、安心して働ける環境です。
-        </p>
-      </section>
+<header>
+  <h1>求人情報</h1>
+</header>
 
-      <section>
-        <h2>勤務条件</h2>
-        <ul>
-          <li>時給：2,200円から</li>
-          <li>勤務時間：20:00〜LAST</li>
-          <li>シフト制（月1回から勤務可能）</li>
-        </ul>
-      </section>
+<main>
 
-      <section>
-        <h2>待遇</h2>
-        <ul>
-          <li>ノルマなし</li>
-          <li>未経験者歓迎</li>
-          <li>経験者優遇</li>
-          <li>交通費支給</li>
-          <li>駐車場あり</li>
-        </ul>
-      </section>
+  <section>
+    <h2>募集内容</h2>
+    <p>
+      Lounge Nalu では、一緒に働いていただけるキャストを募集しています。<br>
+      未経験の方も歓迎いたします。
+    </p>
+  </section>
 
-      <section>
-        <h2>ご応募・お問い合わせ</h2>
-        <p>メールにてご連絡ください。以下の内容をご記入いただけるとスムーズです。</p>
-        <ul>
-          <li>面接希望日</li>
-          <li>お名前</li>
-          <li>年齢</li>
-          <li>電話番号</li>
-        </ul>
-        <p style="margin-top:10px;">
-          下のボタンを押すと、メールソフトが開き、必要事項のひな型が自動で入力されます。
-        </p>
-        <div class="links">
-          <a href="mailto:info@example.com?subject=Lounge%20Nalu%20求人応募&amp;body=以下をご記入のうえ、ご返信ください。%0D%0A%0D%0A・面接希望日：%0D%0A・お名前：%0D%0A・年齢：%0D%0A・電話番号：%0D%0A">
-            メールで応募する
-          </a>
-        </div>
-      </section>
+  <section>
+    <h2>待遇</h2>
+    <ul>
+      <li>時給：応相談</li>
+      <li>送迎あり</li>
+      <li>ドレス貸与</li>
+      <li>未経験者歓迎</li>
+    </ul>
+  </section>
 
-      <div class="links">
-        <a href="index.html">トップページへ戻る</a>
-      </div>
-    </main>
+  <section>
+    <h2>応募方法</h2>
+    <p>
+      お問い合わせはメールにて受け付けております。<br>
+      <a href="mailto:info@example.com" style="color:#fff;">info@example.com</a>
+    </p>
+  </section>
 
-    <footer>
-      &copy; Lounge Nalu
-    </footer>
-  </div>
+  <a href="index.html" class="back">トップページへ戻る</a>
+
+</main>
+
+</div>
 </body>
 </html>
+
+
 
