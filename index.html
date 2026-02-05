@@ -1,166 +1,140 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Lounge Nalu</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
-      color: #ffffff;
-    }
-    body {
-      /* 背景の波画像を全面に固定表示 */
-      background-image: url("wave.jpg"); /* ←ここに波の画像ファイル名 */
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-    .overlay {
-      /* 読みやすくするための薄いオーバーレイ */
-      background: rgba(0, 0, 40, 0.45);
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      padding: 80px 20px 40px;
-    }
-    header h1 {
-      font-size: 3rem;
-      letter-spacing: 0.2em;
-      margin: 0 0 10px;
-    }
-    header p.sub {
-      margin: 0;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 20px 60px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      font-size: 1.4rem;
-      border-bottom: 1px solid rgba(255,255,255,0.4);
-      padding-bottom: 8px;
-      margin-bottom: 16px;
-    }
-    p {
-      line-height: 1.8;
-      font-size: 0.95rem;
-    }
-    .links {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
-      border-radius: 999px;
-      border: 1px solid #ffffff;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 0.9rem;
-      background: rgba(0, 0, 0, 0.25);
-    }
-    .links a:hover {
-      background: rgba(255, 255, 255, 0.15);
-    }
-    footer {
-      text-align: center;
-      font-size: 0.75rem;
-      opacity: 0.7;
-      padding-bottom: 20px;
-    }
-/* スマホ最適化 */
-@media screen and (max-width: 600px) {
-  header {
-    padding: 60px 15px 30px;
-  }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lounge Nalu</title>
 
-  header h1 {
-    font-size: 2.2rem;
-    letter-spacing: 0.1em;
-  }
-
-  main {
-    padding: 0 15px 40px;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  p, li {
-    font-size: 1rem;
-    line-height: 1.9;
-  }
-
-  .links a {
-    display: block;
-    margin: 10px auto;
-    width: 80%;
-    padding: 12px;
-    font-size: 1rem;
+<style>
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    color: #fff;
+    background: url("wave.jpg") no-repeat center center fixed;
+    background-size: cover;
   }
 
   .overlay {
     background: rgba(0, 0, 40, 0.55);
+    min-height: 100vh;
   }
-}
 
-    
-  </style>
+  header {
+    text-align: center;
+    padding: 80px 20px 40px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.15em;
+    margin: 0;
+  }
+
+  main {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px 60px;
+  }
+
+  h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 6px;
+    margin-top: 40px;
+    font-size: 1.6rem;
+  }
+
+  p {
+    line-height: 1.9;
+    font-size: 1.1rem;
+  }
+
+  .links {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  .links a:hover {
+    background: rgba(255,255,255,0.35);
+  }
+
+  /* スマホ最適化 */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+
+    header {
+      padding: 60px 15px 30px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .links a {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      font-size: 1rem;
+    }
+  }
+</style>
 </head>
+
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Lounge Nalu</h1>
-      <p class="sub">ハワイ語で「波」 ― 紹介制・会員制ラウンジ</p>
-    </header>
+<div class="overlay">
 
-    <main>
-      <section>
-        <h2>ご紹介</h2>
-        <p>
-          Lounge Nalu は、紹介制・会員制の大人のためのラウンジです。<br>
-          落ち着いた照明と静かな時間が流れる空間で、<br>
-          大切な方とのひとときをゆっくりとお過ごしください。<br>
-          ゆるやかな波のように、心ほどける時間をお届けいたします。
-        </p>
-      </section>
+<header>
+  <h1>Lounge Nalu</h1>
+</header>
 
-      <!-- 店内写真は後日ここにギャラリーとして追加可能 -->
+<main>
 
-<section>
-  <h2>店舗情報</h2>
-  <p>
-    住所：水戸市大工町<br>
-    営業日：月〜土（※定休日があれば変更できます）<br>
-    営業時間：20:00〜LAST
-  </p>
-</section>
+  <!-- 店舗写真 -->
+  <img src="imag.jpg" alt="店舗写真" style="width:100%; max-width:600px; display:block; margin:0 auto 25px; border-radius:10px;">
 
-      
-      <div class="links">
-        <a href="recruit.html">求人情報はこちら</a>
-        <a href="mailto:info@example.com?subject=Lounge%20Nalu%20お問い合わせ&amp;body=お問い合わせ内容をご記入ください。">
-          メールでお問い合わせ
-        </a>
-      </div>
-    </main>
+  <section>
+    <h2>ご紹介</h2>
+    <p>
+      Lounge Nalu（ナル）は、水戸市大工町にある落ち着いた雰囲気のラウンジです。<br>
+      ゆったりとした時間をお過ごしいただける空間をご用意しております。
+    </p>
+  </section>
 
-    <footer>
-      &copy; Lounge Nalu
-    </footer>
+  <section>
+    <h2>店舗情報</h2>
+    <p>
+      住所：水戸市大工町<br>
+      営業日：月〜土<br>
+      営業時間：20:00〜LAST
+    </p>
+  </section>
+
+  <div class="links">
+    <a href="recruit.html">求人情報はこちら</a>
   </div>
+
+</main>
+
+</div>
 </body>
 </html>
-
-
